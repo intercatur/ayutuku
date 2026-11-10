@@ -5,7 +5,7 @@ const rupiah = (angka) => new Intl.NumberFormat('id-ID', { style: 'currency', cu
 
 async function init() {
     try {
-        const res = await fetch('https://raw.githubusercontent.com/intercatur/ayutuku/refs/heads/main/data.json');
+        const res = await fetch('https://cdn.jsdelivr.net/gh/intercatur/ayutuku@main/data.json');
         data = await res.json();
         
         document.getElementById('toko-nama').innerText = data.toko.nama;
