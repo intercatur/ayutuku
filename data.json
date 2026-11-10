@@ -1,0 +1,174 @@
+{
+  "toko": {
+    "nama": "Ayutuku",
+    "deskripsi": "Temukan barang yang tepat untuk setiap momen.",
+    "wa_number": "6281234567890"
+  },
+  "kategori": [
+    {
+      "id": "burung1",
+      "nama": "Kolibri"
+    },
+    {
+      "id": "burung2",
+      "nama": "Bulbul"
+    },
+    {
+      "id": "ikan1",
+      "nama": "Cupang"
+    },
+    {
+      "id": "ikan2",
+      "nama": "Koi"
+    },
+    {
+      "id": "perlengkapan1",
+      "nama": "PakanBurung"
+    },
+    {
+      "id": "perlengkapan2",
+      "nama": "PakanIkan"
+    }
+  ],
+  "produk": [
+    {
+      "id": 1,
+      "kategori_id": "burung1",
+      "nama": "Kolibri Kelapa",
+      "harga": 40000,
+      "gambar": "https://image.idn.media/post/20260429/1000034569_165037ca-9a9e-48fb-b773-b4852e70a95f.jpg",
+      "deskripsi_singkat": "Kolibri Kelapa Gacor Dor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 2,
+      "kategori_id": "burung1",
+      "nama": "Konin",
+      "harga": 40000,
+      "gambar": "https://image.idn.media/post/20240731/2290687435-0f2fc21afb-o-7e05a59f5596547d0eab65ffac8ce3e2-79f4052339aaf6d366aad98bfb0ee577.jpg",
+      "deskripsi_singkat": "Kolibri Ninja Gacor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 3,
+      "kategori_id": "burung1",
+      "nama": "Sogon",
+      "harga": 70000,
+      "gambar": "https://image.idntimes.com/post/20240719/olive-backed-sunbird-cinnyris-jugularis-eclipse-male-flickr-lip-kee-3-7e05a59f5596547d0eab65ffac8ce3e2-5417826433da1ae3eadf5eacf6925146.jpg",
+      "deskripsi_singkat": "Sogon Gacor Ninja Gacor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 4,
+      "kategori_id": "burung1",
+      "nama": "Kolibri Kelapa Dada Merah",
+      "harga": 100000,
+      "gambar": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/324625661/480",
+      "deskripsi_singkat": "Kolibri Kelapa Dada Merah Gacor Door",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 5,
+      "kategori_id": "burung1",
+      "nama": "Kolibri Wulung",
+      "harga": 250000,
+      "gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhLdGdBxkYDHZrfK16wPANYvYSz5ygcrINrqdqybTVZeJzsW1X19WcmTQ&s=10",
+      "deskripsi_singkat": "Kolibri Wulung",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 6,
+      "kategori_id": "burung2",
+      "nama": "Kutilang Sutra",
+      "harga": 120000,
+      "gambar": "https://jagatsatwanusantara.id/wp-content/uploads/2025/08/103836079.jpg",
+      "deskripsi_singkat": "Kutilang Sutra Gacor Dor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 7,
+      "kategori_id": "burung2",
+      "nama": "Kutilang Emas",
+      "harga": 70000,
+      "gambar": "https://i.ytimg.com/vi/Eum7oeHmdjg/maxresdefault.jpg",
+      "deskripsi_singkat": "Kutilang Emas Gacor Dor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 8,
+      "kategori_id": "burung2",
+      "nama": "Kutilang Jawa",
+      "harga": 50000,
+      "gambar": "https://www.greeners.co/wp-content/uploads/2021/01/Kutilang-min.jpg",
+      "deskripsi_singkat": "Kutilang Jawa Gacor Dor",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    },
+    {
+      "id": 9,
+      "kategori_id": "ikan1",
+      "nama": "Blue Moon",
+      "harga": 400000,
+      "gambar": "https://b581640.assetcdn.net/581640/wp-content/uploads/2025/07/image-19.png?lossy=1&strip=1&webp=1",
+      "deskripsi_singkat": "Ikan Cupang Blue Moon",
+      "detail": {
+        "jeniskelamin": "J,B",
+        "variasi": "ring, polos",
+        "stok": 10
+      }
+    }
+  ],
+  "testimoni": [
+    {
+      "nama": "Rizky",
+      "rating": 5,
+      "pesan": "Toko ini sangat bisa dipercaya. Walaupun pembayaran masih manual (transfer), responnya cepat, barang dikirim sesuai pesanan, dan selalu dikasih bukti pengiriman. Aman banget belanja di sini."
+    },
+    {
+      "nama": "Dewi",
+      "rating": 5,
+      "pesan": "Awalnya ragu karena bayarnya manual, tapi ternyata pelayanannya profesional. Bukti transfer direspon cepat, pesanan sampai dengan aman. Recommended untuk yang cari barang berkualitas."
+    },
+    {
+      "nama": "Budi",
+      "rating": 3,
+      "pesan": "Barangnya bagus-bagus, sesuai foto dan deskripsi. Packing aman, sampai rumah tanpa masalah. Pasti belanja lagi di every one shop."
+    }
+  ],
+  "footer": {
+    "kontak": "WhatsApp: 0812-3456-7890<br>Email: cs@ayutuku.my.id",
+    "alamat": "Jl. Raya Ikan Hias No. 88, Jakarta Selatan",
+    "copyright": "© 2026 ayutuku. Hak Cipta Dilindungi."
+  }
+}
