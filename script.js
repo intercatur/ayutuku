@@ -20,6 +20,7 @@ async function init() {
 
         renderFilter();
         proses();
+        renderTestimoni();
 
         prosesHash();
 
@@ -27,6 +28,31 @@ async function init() {
         console.error(err);
         document.getElementById('katalog').innerHTML = '<p style="width:100%;text-align:center;color:red;padding:20px;">Gagal memuat data.json. Pastikan file berada di folder yang sama.</p>';
     }
+}
+
+function renderTestimoni() {
+    const container = document.getElementById('testimoni-container');
+    if (!data.testimoni || data.testimoni.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:#64748b;">Belum ada testimoni.</p>';
+        return;
+    }
+
+    let html = '';
+    data.testimoni.forEach(t => {
+        // Membuat bintang berdasarkan rating (misal rating 5 = ★★★★★)
+        const bintang = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
+        
+        html += `
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <div class="testimoni-nama">${t.nama}</div>
+                    <div class="testimoni-rating">${bintang}</div>
+                </div>
+                <div class="testimoni-pesan">"${t.pesan}"</div>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
 }
 
 function prosesHash() {
@@ -148,5 +174,4 @@ function tutupModal(dariHash = false) {
     }
 }
 
-// Jalankan init
 init();
