@@ -5,7 +5,7 @@ const rupiah = (angka) => new Intl.NumberFormat('id-ID', { style: 'currency', cu
 
 async function init() {
     try {
-        const res = await fetch('https://cdn.jsdelivr.net/gh/intercatur/ayutuku@main/data.json');
+        const res = await fetch('data.json');
         data = await res.json();
         
         document.getElementById('toko-nama').innerText = data.toko.nama;
@@ -39,7 +39,6 @@ function renderTestimoni() {
 
     let html = '';
     data.testimoni.forEach(t => {
-        // Membuat bintang berdasarkan rating (misal rating 5 = ★★★★★)
         const bintang = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
         
         html += `
@@ -150,7 +149,6 @@ function tampilkanModal(id) {
     } else {
         btn.className = 'btn-whatsapp'; btn.innerText = 'Beli via WhatsApp';
         
-        // Format Pesan WA (Link, Nama, Harga, Pesan)
         const productLink = window.location.href;
         const waText = 
             `${productLink}\n` +
