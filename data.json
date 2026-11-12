@@ -1,151 +1,133 @@
 {
   "toko": {
-    "nama": "Ayutuku",
-    "deskripsi": "Temukan barang yang tepat untuk setiap momen.",
-    "wa_number": "6281234567890"
+    "nama": "Ayutuku Cupang",
+    "deskripsi": "Temukan ikan cupang idaman kamu, di toko kami.",
+    "wa_number": "085122455312"
   },
   "kategori": [
     {
-      "id": "burung1",
-      "nama": "Kolibri"
+      "id": "cupang",
+      "nama": "Cupang (Betta Fish)"
     },
     {
-      "id": "burung2",
-      "nama": "Bulbul"
+      "id": "koi",
+      "nama": "Koi & Mas"
     },
     {
-      "id": "ikan1",
-      "nama": "Cupang"
+      "id": "livebearer",
+      "nama": "Guppy & Molly"
     },
     {
-      "id": "ikan2",
-      "nama": "Koi"
-    },
-    {
-      "id": "perlengkapan1",
-      "nama": "PakanBurung"
-    },
-    {
-      "id": "perlengkapan2",
-      "nama": "PakanIkan"
+      "id": "aksesoris",
+      "nama": "Pakan & Aksesoris"
     }
   ],
   "produk": [
     {
       "id": 1,
-      "kategori_id": "burung1",
-      "nama": "Kolibri Kelapa",
-      "harga": 40000,
-      "gambar": "https://image.idn.media/post/20260429/1000034569_165037ca-9a9e-48fb-b773-b4852e70a95f.jpg",
-      "deskripsi_singkat": "Kolibri Kelapa Gacor Dor",
+      "kategori_id": "cupang",
+      "nama": "Cupang Grade A+",
+      "harga": 500000,
+      "gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vXnJBhLABm8TwtuZrx8-Z23mAIXHK0xh6eyRxo3x9-s1ATtu97HUY8Q&s=10",
+      "deskripsi_singkat": "Cupang Grade A+",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 2,
-      "kategori_id": "burung1",
-      "nama": "Konin",
-      "harga": 40000,
-      "gambar": "https://image.idn.media/post/20240731/2290687435-0f2fc21afb-o-7e05a59f5596547d0eab65ffac8ce3e2-79f4052339aaf6d366aad98bfb0ee577.jpg",
-      "deskripsi_singkat": "Kolibri Ninja Gacor",
+      "kategori_id": "cupang",
+      "nama": "Cupang Grade A",
+      "harga": 260000,
+      "gambar": "https://asset.kompas.com/crops/-RIVPhcffCb2C0CiUbGreaz4lW4=/0x29:1000x695/1200x800/data/photo/2023/05/19/64670f888d0a3.jpg",
+      "deskripsi_singkat": "Cupang Grade A",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 3,
-      "kategori_id": "burung1",
-      "nama": "Sogon",
-      "harga": 70000,
-      "gambar": "https://image.idntimes.com/post/20240719/olive-backed-sunbird-cinnyris-jugularis-eclipse-male-flickr-lip-kee-3-7e05a59f5596547d0eab65ffac8ce3e2-5417826433da1ae3eadf5eacf6925146.jpg",
-      "deskripsi_singkat": "Sogon Gacor Ninja Gacor",
+      "kategori_id": "cupang",
+      "nama": "Cupang Grade B",
+      "harga": 100000,
+      "gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkHTVT9JDF7gusQ0SwkdJUaAnXHNnaDU8pG44tTeMYk2PqtQhOlwDoJCA&s=10",
+      "deskripsi_singkat": "Cupang Grade B",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 4,
-      "kategori_id": "burung1",
-      "nama": "Kolibri Kelapa Dada Merah",
-      "harga": 100000,
-      "gambar": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/324625661/480",
-      "deskripsi_singkat": "Kolibri Kelapa Dada Merah Gacor Door",
+      "kategori_id": "cupang",
+      "nama": "Cupang Grade C",
+      "harga": 60000,
+      "gambar": "https://cdn-jpr.jawapos.com/images/43/2026/10/03/8-jenis-ikan-cupang-cantik-untuk-akuarium-dari-half-moon-plakat-hingga-fancy-dengan-harga-mencapai-rp2-juta-9NG9B.webp",
+      "deskripsi_singkat": "Cupang Grade C",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 5,
-      "kategori_id": "burung1",
-      "nama": "Kolibri Wulung",
-      "harga": 250000,
-      "gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhLdGdBxkYDHZrfK16wPANYvYSz5ygcrINrqdqybTVZeJzsW1X19WcmTQ&s=10",
-      "deskripsi_singkat": "Kolibri Wulung",
+      "kategori_id": "koi",
+      "nama": "Koi Jumbo",
+      "harga": 300000,
+      "gambar": "https://radarkuningan.disway.id/upload/139c55d7a6a3a67191980af0c44d3d63.jpg",
+      "deskripsi_singkat": "Koi Jumbo",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 6,
-      "kategori_id": "burung2",
-      "nama": "Kutilang Sutra",
-      "harga": 120000,
-      "gambar": "https://jagatsatwanusantara.id/wp-content/uploads/2025/08/103836079.jpg",
-      "deskripsi_singkat": "Kutilang Sutra Gacor Dor",
+      "kategori_id": "koi",
+      "nama": "Koi Jepang",
+      "harga": 5000000,
+      "gambar": "https://platinumadisentosa.com/wp-content/uploads/2024/01/Kawarimono.jpg",
+      "deskripsi_singkat": "Koi Jepang",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 7,
-      "kategori_id": "burung2",
-      "nama": "Kutilang Emas",
-      "harga": 70000,
-      "gambar": "https://i.ytimg.com/vi/Eum7oeHmdjg/maxresdefault.jpg",
-      "deskripsi_singkat": "Kutilang Emas Gacor Dor",
+      "kategori_id": "livebearer",
+      "nama": "Guppy Violet",
+      "harga": 600000,
+      "gambar": "https://asset.kompas.com/crops/m8GFtghlNeTj4xkUcV877d14uPo=/63x22:741x474/1200x800/data/photo/2022/08/17/62fc8128bb88d.jpg",
+      "deskripsi_singkat": "Guppy Violet",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 8,
-      "kategori_id": "burung2",
-      "nama": "Kutilang Jawa",
-      "harga": 50000,
-      "gambar": "https://www.greeners.co/wp-content/uploads/2021/01/Kutilang-min.jpg",
-      "deskripsi_singkat": "Kutilang Jawa Gacor Dor",
+      "kategori_id": "livebearer",
+      "nama": "Guppy Leopart",
+      "harga": 100000,
+      "gambar": "https://mollyjaya.id/wp-content/uploads/2026/06/gambar-ikan-guppy-purple-grass.webp",
+      "deskripsi_singkat": "Guppy Leopard",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 10,
+        "jk": "jantan, betina"
       }
     },
     {
       "id": 9,
-      "kategori_id": "ikan1",
-      "nama": "Blue Moon",
-      "harga": 400000,
-      "gambar": "https://b581640.assetcdn.net/581640/wp-content/uploads/2025/07/image-19.png?lossy=1&strip=1&webp=1",
-      "deskripsi_singkat": "Ikan Cupang Blue Moon",
+      "kategori_id": "aksesoris",
+      "nama": "Soliter",
+      "harga": 7000,
+      "gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfup5REdc8VxpufxJFyXzoV2FOz4jEthPIfOAQ1obZeQ&s=10",
+      "deskripsi_singkat": "Soliter Cupang",
       "detail": {
-        "jeniskelamin": "J,B",
-        "variasi": "ring, polos",
-        "stok": 10
+        "stok": 1000
       }
     }
   ],
@@ -162,13 +144,28 @@
     },
     {
       "nama": "Budi",
-      "rating": 3,
+      "rating": 5,
       "pesan": "Barangnya bagus-bagus, sesuai foto dan deskripsi. Packing aman, sampai rumah tanpa masalah. Pasti belanja lagi di every one shop."
+    },
+    {
+      "nama": "Tina",
+      "rating": 5,
+      "pesan": "Cupang Sangat Bagus"
+    },
+    {
+      "nama": "Narko",
+      "rating": 5,
+      "pesan": "Saya Suka"
+    },
+    {
+      "nama": "Mira",
+      "rating": 5,
+      "pesan": "Sangat Bagus"
     }
   ],
   "footer": {
-    "kontak": "WhatsApp: 0812-3456-7890<br>Email: cs@ayutuku.my.id",
-    "alamat": "Jl. Raya Ikan Hias No. 88, Jakarta Selatan",
+    "kontak": "WhatsApp: 085122455312<br>Email: cs@ayutuku.my.id",
+    "alamat": "Jl. Raya Ikan Hias No. 88, Purbalingga",
     "copyright": "© 2026 ayutuku. Hak Cipta Dilindungi."
   }
 }
