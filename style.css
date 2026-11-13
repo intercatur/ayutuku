@@ -218,7 +218,7 @@ a {
 }
 
 /* =========================================
-   5. GRID PRODUK
+   5. GRID PRODUK (HARGA SELALU DI BAWAH)
    ========================================= */
 .product-grid {
     max-width: var(--container-max);
@@ -228,6 +228,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 24px;
     min-height: 300px;
+    align-items: stretch;   /* card sama tinggi */
 }
 
 .product-card {
@@ -238,7 +239,8 @@ a {
     cursor: pointer;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* wajib */
+    height: 100%;            /* mengisi tinggi grid cell */
     transition: box-shadow var(--transition), transform var(--transition);
 }
 
@@ -253,14 +255,14 @@ a {
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-body);
+    flex-shrink: 0;          /* gambar tidak mengecil */
 }
 
 .product-info {
     padding: 16px;
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 8px;
+    flex-direction: column;  /* wajib */
+    flex: 1;                 /* wajib: isi sisa tinggi card */
 }
 
 .product-title {
@@ -268,6 +270,7 @@ a {
     font-weight: 700;
     color: var(--text-dark);
     line-height: 1.4;
+    margin-bottom: 6px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -278,7 +281,8 @@ a {
     font-size: 13px;
     color: var(--text-muted);
     line-height: 1.5;
-    flex: 1;
+    margin-bottom: 12px;
+    flex: 1;                 /* dorong harga ke bawah */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -289,7 +293,7 @@ a {
     font-size: 17px;
     font-weight: 800;
     color: var(--primary);
-    margin-top: auto;
+    margin-top: auto;        /* backup dorongan ke bawah */
 }
 
 /* Out of stock */
