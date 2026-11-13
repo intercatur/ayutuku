@@ -176,7 +176,7 @@ a {
 }
 
 /* =========================================
-   4. FILTER KATEGORI (DIPERKECIL)
+   4. FILTER KATEGORI
    ========================================= */
 .main-content {
     flex: 1;
@@ -366,13 +366,12 @@ a {
 }
 
 /* =========================================
-   7. MODAL
+   7. MODAL (OVERLAY BIRU, TANPA BLUR)
    ========================================= */
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(4px);
+    background-color: rgba(67, 56, 202, 0.85);   /* Biru (accent) */
     display: none;
     justify-content: center;
     align-items: center;
