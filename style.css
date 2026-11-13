@@ -17,7 +17,6 @@
    1. VARIABLES & RESET
    ========================================= */
 :root {
-    /* Colors */
     --primary: #2e1065;
     --primary-hover: #1e0a45;
     --accent: #4338ca;
@@ -25,36 +24,33 @@
     --danger: #dc2626;
     --warning: #f59e0b;
     
-    /* Backgrounds */
     --bg-body: #f8fafc;
     --bg-white: #ffffff;
     --footer-bg: #0f172a;
     
-    /* Text */
     --text-dark: #1e293b;
     --text-muted: #64748b;
     --footer-text: #cbd5e1;
     
-    /* Borders */
     --border-color: #e2e8f0;
     
-    /* Shadows */
     --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
     
-    /* Radius */
     --radius-sm: 6px;
     --radius-md: 8px;
     --radius-lg: 12px;
     --radius-full: 9999px;
     
-    /* Transitions */
     --transition: 0.25s ease;
     
-    /* Layout */
     --container-max: 1200px;
     --container-padding: 20px;
+    
+    /* Tinggi card produk */
+    --card-min-height: 300px;
+    --card-image-height: 180px;
 }
 
 *,
@@ -127,7 +123,6 @@ a {
     opacity: 0.9;
 }
 
-/* Search */
 .search-container {
     max-width: 520px;
     margin: 0 auto;
@@ -218,7 +213,7 @@ a {
 }
 
 /* =========================================
-   5. GRID PRODUK (HARGA SELALU DI BAWAH)
+   5. GRID PRODUK
    ========================================= */
 .product-grid {
     max-width: var(--container-max);
@@ -226,9 +221,10 @@ a {
     padding: 0 var(--container-padding);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: minmax(var(--card-min-height), auto);
     gap: 24px;
     min-height: 300px;
-    align-items: stretch;   /* card sama tinggi */
+    align-items: stretch;
 }
 
 .product-card {
@@ -239,8 +235,9 @@ a {
     cursor: pointer;
     position: relative;
     display: flex;
-    flex-direction: column;  /* wajib */
-    height: 100%;            /* mengisi tinggi grid cell */
+    flex-direction: column;
+    height: 100%;
+    min-height: var(--card-min-height);
     transition: box-shadow var(--transition), transform var(--transition);
 }
 
@@ -251,18 +248,20 @@ a {
 
 .product-image {
     width: 100%;
-    height: 180px;
+    height: var(--card-image-height);
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-body);
-    flex-shrink: 0;          /* gambar tidak mengecil */
+    flex-shrink: 0;
+    display: block;
 }
 
 .product-info {
-    padding: 16px;
     display: flex;
-    flex-direction: column;  /* wajib */
-    flex: 1;                 /* wajib: isi sisa tinggi card */
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 16px;
 }
 
 .product-title {
@@ -271,6 +270,7 @@ a {
     color: var(--text-dark);
     line-height: 1.4;
     margin-bottom: 6px;
+    flex: 0 0 auto;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -282,7 +282,8 @@ a {
     color: var(--text-muted);
     line-height: 1.5;
     margin-bottom: 12px;
-    flex: 1;                 /* dorong harga ke bawah */
+    flex: 1 1 auto;
+    min-height: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -293,10 +294,10 @@ a {
     font-size: 17px;
     font-weight: 800;
     color: var(--primary);
-    margin-top: auto;        /* backup dorongan ke bawah */
+    margin-top: auto;
+    flex: 0 0 auto;
 }
 
-/* Out of stock */
 .product-card.out-of-stock .product-image {
     filter: grayscale(100%);
     opacity: 0.5;
@@ -317,7 +318,6 @@ a {
     z-index: 2;
 }
 
-/* Empty state */
 .empty-state {
     grid-column: 1 / -1;
     text-align: center;
@@ -375,7 +375,7 @@ a {
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(67, 56, 202, 0.85);   /* Biru (accent) */
+    background-color: rgba(67, 56, 202, 0.85);
     display: none;
     justify-content: center;
     align-items: center;
@@ -608,36 +608,55 @@ body.modal-open {
 }
 
 /* =========================================
-   9. FOOTER
+   9. FOOTER (CENTERED)
    ========================================= */
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
     padding: 50px 20px 30px;
     margin-top: auto;
+    text-align: center;
+    width: 100%;
 }
 
 .footer-inner {
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-col h3 {
     color: var(--bg-white);
     font-size: 16px;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .footer-col p {
     font-size: 14px;
     line-height: 1.8;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .footer-bottom {
@@ -646,6 +665,7 @@ body.modal-open {
     font-size: 13px;
     color: #94a3b8;
     text-align: center;
+    width: 100%;
 }
 
 /* =========================================
@@ -666,6 +686,11 @@ body.modal-open {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --card-min-height: 280px;
+        --card-image-height: 150px;
+    }
+    
     .site-title { font-size: 22px; }
     .site-tagline { font-size: 13px; }
     
@@ -674,7 +699,6 @@ body.modal-open {
         gap: 14px;
     }
     
-    .product-image { height: 150px; }
     .product-info  { padding: 12px; }
     .product-title { font-size: 14px; }
     .product-price { font-size: 15px; }
@@ -682,7 +706,7 @@ body.modal-open {
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 20px;
+        gap: 24px;
     }
     
     .modal-image { height: 180px; }
@@ -690,6 +714,11 @@ body.modal-open {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --card-min-height: 260px;
+        --card-image-height: 130px;
+    }
+    
     .site-header { padding: 30px 16px 24px; }
     .site-title  { font-size: 20px; }
     
@@ -697,12 +726,10 @@ body.modal-open {
     .search-container button { padding: 0 14px; }
     .search-container .btn-text { display: none; }
     
-    /* Filter lebih kecil di HP */
     .filter-container { gap: 5px; margin: 16px auto; }
     .btn-filter { padding: 4px 10px; font-size: 11px; }
     
     .product-grid { gap: 12px; }
-    .product-image { height: 130px; }
     
     .modal-box { max-width: 100%; }
     .modal-image { height: 160px; }
